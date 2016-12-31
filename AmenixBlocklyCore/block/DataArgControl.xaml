@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="AmenixBlocklyCore.block.DataArgControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AmenixBlocklyCore.block"
+             mc:Ignorable="d" 
+             d:DesignHeight="25" d:DesignWidth="30">
+    <Grid HorizontalAlignment="Left" x:Name="RootPanel">
+        <Polygon Fill="LightPink" x:Name="polygon" Stroke="BlueViolet" StrokeThickness="1"
+                    Points="5,0 30,0 30,25 5,25 5,20 0,20 0,5 5,5">
+        </Polygon>
+        <Border HorizontalAlignment="Left" Padding="3" BorderBrush="Transparent" BorderThickness="1" x:Name="BorderContentPanel" MinWidth="30">
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" x:Name="ContentPanel" />
+        </Border>
+    </Grid>
+</UserControl>
